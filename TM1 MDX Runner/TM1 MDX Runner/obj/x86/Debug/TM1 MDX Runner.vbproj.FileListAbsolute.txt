@@ -1,0 +1,13 @@
+C:\Users\Morgan\Documents\Visual Studio 2010\Projects\TM1 MDX Runner\TM1 MDX Runner\bin\Debug\TM1 MDX Runner.exe
+C:\Users\Morgan\Documents\Visual Studio 2010\Projects\TM1 MDX Runner\TM1 MDX Runner\bin\Debug\TM1 MDX Runner.pdb
+C:\Users\Morgan\Documents\Visual Studio 2010\Projects\TM1 MDX Runner\TM1 MDX Runner\bin\Debug\TM1 MDX Runner.xml
+C:\Users\Morgan\Documents\Visual Studio 2010\Projects\TM1 MDX Runner\TM1 MDX Runner\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Morgan\Documents\Visual Studio 2010\Projects\TM1 MDX Runner\TM1 MDX Runner\obj\x86\Debug\TM1_MDX_Runner.Form1.resources
+C:\Users\Morgan\Documents\Visual Studio 2010\Projects\TM1 MDX Runner\TM1 MDX Runner\obj\x86\Debug\TM1_MDX_Runner.Form2.resources
+C:\Users\Morgan\Documents\Visual Studio 2010\Projects\TM1 MDX Runner\TM1 MDX Runner\obj\x86\Debug\TM1_MDX_Runner.Resources.resources
+C:\Users\Morgan\Documents\Visual Studio 2010\Projects\TM1 MDX Runner\TM1 MDX Runner\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Morgan\Documents\Visual Studio 2010\Projects\TM1 MDX Runner\TM1 MDX Runner\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Morgan\Documents\Visual Studio 2010\Projects\TM1 MDX Runner\TM1 MDX Runner\obj\x86\Debug\TM1 MDX Runner.exe
+C:\Users\Morgan\Documents\Visual Studio 2010\Projects\TM1 MDX Runner\TM1 MDX Runner\obj\x86\Debug\TM1 MDX Runner.xml
+C:\Users\Morgan\Documents\Visual Studio 2010\Projects\TM1 MDX Runner\TM1 MDX Runner\obj\x86\Debug\TM1 MDX Runner.pdb
+C:\Users\Morgan\documents\visual studio 2010\Projects\TM1 MDX Runner\TM1 MDX Runner\obj\x86\Debug\TM1 MDX Runner.vbproj.ResolveComReference.cache
