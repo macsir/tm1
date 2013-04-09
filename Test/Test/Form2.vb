@@ -32,7 +32,7 @@ Public Class Form2
         i_ObjCnt = objServersCollection.Count
 
         For i_ObjIdx = 0 To i_ObjCnt - 1
-            Form1.ServersToolStripMenuItem1.DropDownItems.Add(objServersCollection.Item(i_ObjIdx).Name)
+            Form1.ServersToolStripMenuItem1.DropDownItems.Add(objServersCollection.Item(i_ObjIdx).HostName & ":" & objServersCollection.Item(i_ObjIdx).Name)
         Next
 
         Form1.Show()
