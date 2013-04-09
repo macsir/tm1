@@ -36,3 +36,4 @@ C:\Users\Morgan\Documents\Visual Studio 2010\Projects\Test\Test\bin\Debug\zh-TW\
 C:\Users\Morgan\Documents\Visual Studio 2010\Projects\Test\Test\obj\x86\Debug\Test.exe
 C:\Users\Morgan\Documents\Visual Studio 2010\Projects\Test\Test\obj\x86\Debug\Test.xml
 C:\Users\Morgan\Documents\Visual Studio 2010\Projects\Test\Test\obj\x86\Debug\Test.pdb
+C:\Users\Morgan\Documents\Visual Studio 2010\Projects\Test\Test\obj\x86\Debug\Test.Form2.resources
