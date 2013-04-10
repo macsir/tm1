@@ -70,10 +70,11 @@ C:\Documents and Settings\s2859689\My Documents\GitHub\tm1\Test\Test\bin\Debug\t
 C:\Documents and Settings\s2859689\My Documents\GitHub\tm1\Test\Test\bin\Debug\zh-CN\Applix.TM1.API.resources.dll
 C:\Documents and Settings\s2859689\My Documents\GitHub\tm1\Test\Test\bin\Debug\zh-TW\Applix.TM1.API.resources.dll
 C:\Documents and Settings\s2859689\My Documents\GitHub\tm1\Test\Test\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Documents and Settings\s2859689\My Documents\GitHub\tm1\Test\Test\obj\x86\Debug\Test.Form1.resources
-C:\Documents and Settings\s2859689\My Documents\GitHub\tm1\Test\Test\obj\x86\Debug\Test.Form2.resources
 C:\Documents and Settings\s2859689\My Documents\GitHub\tm1\Test\Test\obj\x86\Debug\Test.Resources.resources
 C:\Documents and Settings\s2859689\My Documents\GitHub\tm1\Test\Test\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
 C:\Documents and Settings\s2859689\My Documents\GitHub\tm1\Test\Test\obj\x86\Debug\ResGen.read.1.tlog
 C:\Documents and Settings\s2859689\My Documents\GitHub\tm1\Test\Test\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
 C:\Documents and Settings\s2859689\My Documents\GitHub\tm1\Test\Test\obj\x86\Debug\ResGen.write.1.tlog
+C:\Documents and Settings\s2859689\My Documents\GitHub\tm1\Test\Test\obj\x86\Debug\Test.LoginForm.resources
+C:\Documents and Settings\s2859689\My Documents\GitHub\tm1\Test\Test\obj\x86\Debug\Test.MainForm.resources
+C:\Documents and Settings\s2859689\My Documents\GitHub\tm1\Test\Test\obj\x86\Debug\Test.ParaForm.resources

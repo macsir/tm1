@@ -1,7 +1,23 @@
 ﻿Option Explicit On
 Imports Applix.TM1.API
 
-Public Class Form1
+
+Public Class MainForm
+    Public selectedServer As String
+
+    Private Sub ServersSubMenuItemClicked(ByVal sender As Object, ByVal e As EventArgs)
+
+        Dim ServerName As String
+        Dim clickedItem As ToolStripMenuItem = CType(sender, ToolStripMenuItem)
+
+        clickedItem.Checked = True
+        ServerName = clickedItem.Text
+        selectedServer = clickedItem.Text
+        Dim LF As New LoginForm(ServerName)
+        LF.Show()
+
+    End Sub
+
 
     Public Sub New()
 
@@ -9,13 +25,44 @@ Public Class Form1
         InitializeComponent()
 
         ' 在 InitializeComponent() 调用之后添加任何初始化。
+        Me.Text = "TM1 MDX Player 1.0"
+        Dim adminHosts As String
 
-        'Me.ServersToolStripMenuItem1.DropDownItems.Add("1")
+        If System.IO.File.Exists("AdminHostConfig.txt") = True Then
 
+            Dim myfilestream As New  _
+            System.IO.FileStream("AdminHostConfig.txt", _
+            System.IO.FileMode.OpenOrCreate, _
+            System.IO.FileAccess.ReadWrite, _
+            System.IO.FileShare.None)
+
+            Dim myreader As New System.IO.StreamReader(myfilestream)
+            adminHosts = myreader.ReadToEnd
+            myreader.Close()
+            myfilestream.Close()
+
+            Dim i_ObjIdx As Integer, i_ObjCnt As Integer
+            Dim objAdminSvr As TM1AdminServer
+            Dim objServersCollection As TM1ServerInfoCollection
+
+            objAdminSvr = New TM1AdminServer(adminHosts, "tm1adminserver")
+            objServersCollection = objAdminSvr.Servers
+            i_ObjCnt = objServersCollection.Count
+
+            For i_ObjIdx = 0 To i_ObjCnt - 1
+                Me.ServersToolStripMenuItem1.DropDownItems.Add(objServersCollection.Item(i_ObjIdx).HostName & ":" & objServersCollection.Item(i_ObjIdx).Name)
+                AddHandler Me.ServersToolStripMenuItem1.DropDownItems.Item(i_ObjIdx).Click, AddressOf ServersSubMenuItemClicked
+            Next
+
+            objAdminSvr.Dispose()
+            objServersCollection.Dispose()
+        End If
+
+        Me.RunMDXToolStripMenuItem.Enabled = False
 
     End Sub
 
-    Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
 
 
         Dim i_ObjIdx As Integer, i_ObjCnt As Integer
@@ -27,9 +74,9 @@ Public Class Form1
         Dim objTM1Process As TM1Process
         Dim objaParams(1) As TM1ProcessParameter
         Dim test As String
-      
+
         Try
-            test = "localhost"
+            test = "na-dev-cognos.nalan.gu.edu.au"
             objAdminSvr = New TM1AdminServer(test, "tm1adminserver")
 
 
@@ -48,9 +95,9 @@ Public Class Form1
 
             Debug.Print(vbNewLine)
 
-            objServerInfo = objServersCollection.Item("GO_New_Stores")
+            objServerInfo = objServersCollection.Item("Griffith-Dev")
 
-            objsDataServer = objServerInfo.Login("admin", "apple")
+            objsDataServer = objServerInfo.Login("morganm", "pass123")
 
 
 
@@ -111,12 +158,12 @@ Public Class Form1
             objAdminSvr.Dispose()
 
         Catch ex As Exception
- 
+
         End Try
     End Sub
 
 
-    Private Sub ConnectToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs)
+    Private Sub ConnectToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Dim i_ObjIdx As Integer, i_ObjCnt As Integer
 
         Dim objAdminSvr As TM1AdminServer
@@ -241,9 +288,21 @@ Public Class Form1
 
     End Sub
 
-    Private Sub OptionsToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles OptionsToolStripMenuItem.Click
-        Form2.Show()
+    Private Sub OptionsToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OptionsToolStripMenuItem.Click
+        ParaForm.Show()
     End Sub
 
 
+    Private Sub ExitToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ExitToolStripMenuItem.Click
+        Me.Dispose()
+    End Sub
+
+    Private Sub AboutToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AboutToolStripMenuItem.Click
+        AboutForm.Show()
+    End Sub
+
+    Private Sub InputToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles InputToolStripMenuItem.Click
+        Dim MF As New MDXForm(selectedServer)
+        MF.Show()
+    End Sub
 End Class
