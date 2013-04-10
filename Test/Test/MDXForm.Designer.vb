@@ -22,6 +22,7 @@ Partial Class MDXForm
     '不要使用代码编辑器修改它。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MDXForm))
         Me.Label5 = New System.Windows.Forms.Label()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -61,6 +62,7 @@ Partial Class MDXForm
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.Label5)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "MDXForm"
         Me.Text = "TM1 MDX Runner"
         Me.ResumeLayout(False)

@@ -6,35 +6,35 @@ Public Class LoginForm
 
     Private Sub MakeTree(ByVal objsDataServer As TM1Server, ByVal e As EventArgs)
 
-        Dim i As Integer, j As Integer, k As Integer, i_ObjCnt As Integer
+        Dim i As Integer, j As Integer, k As Integer
         Dim strServer As String, strCube As String, strView As String
         Dim node As TreeNode
 
         'Get servers
         'For i = 1 To i_ObjCnt
         strServer = Me.server
-        node = MainForm.TreeView1.Nodes.Add(strServer, strServer, 0)
-        node.SelectedImageIndex = 0
+        node = MainForm.TreeView1.Nodes.Add(strServer, strServer & " (" & UserInfo.UserName & ")", 9)
+        node.SelectedImageIndex = 9
 
         'Get cubes
         For j = 1 To objsDataServer.Cubes.Count
             strCube = objsDataServer.Cubes.Item(j - 1).Name
 
             If strCube.Substring(0, 1) <> "}" Then
-                node = MainForm.TreeView1.Nodes(0).Nodes.Add(strCube, strCube, 1)
-                node.SelectedImageIndex = 1
+                node = MainForm.TreeView1.Nodes(0).Nodes.Add(strCube, strCube, 4)
+                node.SelectedImageIndex = 4
 
                 'Get cube public views
                 For k = 1 To objsDataServer.Cubes.Item(j - 1).PublicViews.Count
                     strView = objsDataServer.Cubes.Item(j - 1).PublicViews.Item(k - 1).Name
-                    node = MainForm.TreeView1.Nodes(0).Nodes(j - 1).Nodes.Add(strView, strView, 2)
-                    node.SelectedImageIndex = 2
+                    node = MainForm.TreeView1.Nodes(0).Nodes(j - 1).Nodes.Add(strView, strView, 7)
+                    node.SelectedImageIndex = 7
                 Next k
 
                 For k = 1 To objsDataServer.Cubes.Item(j - 1).PrivateViews.Count
                     strView = objsDataServer.Cubes.Item(j - 1).PrivateViews.Item(k - 1).Name
-                    node = MainForm.TreeView1.Nodes(0).Nodes(j - 1).Nodes.Add(strView, strView, 3)
-                    node.SelectedImageIndex = 3
+                    node = MainForm.TreeView1.Nodes(0).Nodes(j - 1).Nodes.Add(strView, strView, 8)
+                    node.SelectedImageIndex = 8
                 Next k
 
             End If

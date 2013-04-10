@@ -54,14 +54,14 @@ Partial Class LoginForm
         Me.TextBox1.Location = New System.Drawing.Point(92, 17)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(122, 20)
-        Me.TextBox1.TabIndex = 2
+        Me.TextBox1.TabIndex = 0
         '
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(92, 54)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(122, 20)
-        Me.TextBox2.TabIndex = 3
+        Me.TextBox2.TabIndex = 1
         Me.TextBox2.UseSystemPasswordChar = True
         '
         'Button1
@@ -69,7 +69,7 @@ Partial Class LoginForm
         Me.Button1.Location = New System.Drawing.Point(28, 102)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 0
+        Me.Button1.TabIndex = 2
         Me.Button1.Text = "OK"
         Me.Button1.UseVisualStyleBackColor = True
         '
@@ -78,7 +78,7 @@ Partial Class LoginForm
         Me.Button2.Location = New System.Drawing.Point(166, 102)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 1
+        Me.Button2.TabIndex = 3
         Me.Button2.Text = "Cancel"
         Me.Button2.UseVisualStyleBackColor = True
         '

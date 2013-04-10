@@ -69,17 +69,23 @@ Partial Class MainForm
         Me.ImageList1.Images.SetKeyName(1, "Cube.PNG")
         Me.ImageList1.Images.SetKeyName(2, "View.PNG")
         Me.ImageList1.Images.SetKeyName(3, "PView.PNG")
+        Me.ImageList1.Images.SetKeyName(4, "Cube2.png")
+        Me.ImageList1.Images.SetKeyName(5, "Server2.png")
+        Me.ImageList1.Images.SetKeyName(6, "puzzle.png")
+        Me.ImageList1.Images.SetKeyName(7, "View2.png")
+        Me.ImageList1.Images.SetKeyName(8, "PView2.png")
+        Me.ImageList1.Images.SetKeyName(9, "Server3.png")
         '
         'ContextMenuStrip1
         '
         Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(141, 26)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(136, 26)
         '
         'ToolStripMenuItem1
         '
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(140, 22)
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(135, 22)
         Me.ToolStripMenuItem1.Text = "Show MDX"
         '
         'MenuStrip1
@@ -101,13 +107,13 @@ Partial Class MainForm
         'OptionsToolStripMenuItem
         '
         Me.OptionsToolStripMenuItem.Name = "OptionsToolStripMenuItem"
-        Me.OptionsToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.OptionsToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
         Me.OptionsToolStripMenuItem.Text = "Options"
         '
         'AboutToolStripMenuItem
         '
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
         Me.AboutToolStripMenuItem.Text = "About"
         '
         'ToolStripSeparator2
@@ -137,7 +143,7 @@ Partial Class MainForm
         'InputToolStripMenuItem
         '
         Me.InputToolStripMenuItem.Name = "InputToolStripMenuItem"
-        Me.InputToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.InputToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
         Me.InputToolStripMenuItem.Text = "MDX Editor"
         '
         'MainForm
